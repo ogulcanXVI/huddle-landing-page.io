@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background: hsl(257, 40%, 49%);
+    background-image: url('./images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    max-width: 1440px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .logo {
+    margin: 0 0 70px;
+}
+
+.container .logo img {
+    width: 200px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    margin-left: 50px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 2.7rem;
+    line-height: 1.4;
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+
+p {
+    opacity: 0.9;
+    line-height: 1.6;
+    font-size: 1.3rem;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    color: hsla(257, 40%, 49%, 0.801);
+    border-radius: 25px;
+    padding: 15px 60px;
+    font-size: 1.35rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+    cursor: pointer;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social i {
+    display: flex;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.social i:hover {
+    color: hsl(300, 69%, 71%);;
+    border: 1px solid hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+@media (max-width: 50rem) {
+    body {
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        background: hsl(257, 40%, 49%);
+        background-image: url('./images/bg-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 100%;
+        justify-content: unset;
+        margin: 0;
+        padding: 0;  
+    }
+
+    main {
+        margin: 0 40px;
+    }
+    
+    .container div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .logo img {
+        max-width: 150px;
+        opacity: 0.9;
+        margin: 40px 0 0 0;
+        padding: 0;
+    }
+
+    .container .image img {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .content {
+        margin: 0;
+    }
+
+    .hero .image {
+        display: flex;
+    }
+
+    .hero {
+        display: flex;
+        text-align: center;
+    }
+
+    .content h2 {
+        font-size: 2.1rem;
+        opacity: 0.8;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .content p {
+        font-size: 1.3rem;
+        opacity: 0.8;
+    }
+    
+    .content button {
+        padding: 10px 0px;
+        margin: 35px 50px;
+        opacity: 0.8;
+
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        flex-direction: row !important;
+        margin: 40px 85px 30px 85px;
+    }
+    
+    .social i {
+        display: flex;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        height: 20px;
+        width: 20px;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 5px;
+    }
+}
